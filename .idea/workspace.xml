@@ -19,9 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbe93722-3639-49b1-8b80-45376e223afb" name="Default Changelist" comment="node modules">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    <list default="true" id="fbe93722-3639-49b1-8b80-45376e223afb" name="Default Changelist" comment="remove type module">
+      <change beforePath="$PROJECT_DIR$/init.js" beforeDir="false" afterPath="$PROJECT_DIR$/init.mjs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,16 +57,16 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="Node.js.init.js">
+  <component name="RunManager" selected="Node.js.init.mjs">
     <configuration name="index.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/index.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
-    <configuration name="init.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/init.js" working-dir="$PROJECT_DIR$">
+    <configuration name="init.mjs" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/init.mjs" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Node.js.init.js" />
+        <item itemvalue="Node.js.init.mjs" />
       </list>
     </recent_temporary>
   </component>
@@ -86,7 +85,7 @@
       <workItem from="1604000287317" duration="18000" />
       <workItem from="1604000400174" duration="2865000" />
       <workItem from="1604362237574" duration="699000" />
-      <workItem from="1604936736874" duration="4508000" />
+      <workItem from="1604936736874" duration="5162000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1603999107466</created>
@@ -109,7 +108,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604940763973</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="remove type module">
+      <created>1604942411756</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1604942411756</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,7 +137,8 @@
     <MESSAGE value="First Commit" />
     <MESSAGE value="Initialize 3d printer" />
     <MESSAGE value="node modules" />
-    <option name="LAST_COMMIT_MESSAGE" value="node modules" />
+    <MESSAGE value="remove type module" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove type module" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1374" y="355" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604001068465">
@@ -146,30 +153,30 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1781" y="602" key="Github.ShareDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1603999140950" />
-    <state width="1259" height="398" key="GridCell.Tab.0.bottom" timestamp="1604941313775">
+    <state width="1257" height="398" key="GridCell.Tab.0.bottom" timestamp="1604943676120">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1259" height="398" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1604941313775" />
-    <state width="1259" height="398" key="GridCell.Tab.0.center" timestamp="1604941313775">
+    <state width="1257" height="398" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1604943676120" />
+    <state width="1257" height="398" key="GridCell.Tab.0.center" timestamp="1604943676119">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1259" height="398" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1604941313775" />
-    <state width="1259" height="398" key="GridCell.Tab.0.left" timestamp="1604941313775">
+    <state width="1257" height="398" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1604943676119" />
+    <state width="1257" height="398" key="GridCell.Tab.0.left" timestamp="1604943676119">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1259" height="398" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1604941313775" />
-    <state width="1259" height="398" key="GridCell.Tab.0.right" timestamp="1604941313775">
+    <state width="1257" height="398" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1604943676119" />
+    <state width="1257" height="398" key="GridCell.Tab.0.right" timestamp="1604943676120">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1259" height="398" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1604941313775" />
+    <state width="1257" height="398" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1604943676119" />
     <state x="1421" y="345" key="SettingsEditor" timestamp="1604000033838">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1421" y="345" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1604000033838" />
-    <state x="1512" y="437" key="Vcs.Push.Dialog.v2" timestamp="1604940770131">
+    <state x="1512" y="437" key="Vcs.Push.Dialog.v2" timestamp="1604942414092">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1512" y="437" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1604940770131" />
+    <state x="1512" y="437" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1604942414092" />
     <state x="1753" y="438" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1604940632370">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
