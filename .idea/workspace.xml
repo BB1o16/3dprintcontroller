@@ -19,8 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbe93722-3639-49b1-8b80-45376e223afb" name="Default Changelist" comment="remove type module">
-      <change beforePath="$PROJECT_DIR$/init.js" beforeDir="false" afterPath="$PROJECT_DIR$/init.mjs" afterDir="false" />
+    <list default="true" id="fbe93722-3639-49b1-8b80-45376e223afb" name="Default Changelist" comment="rename init extention to .mjs">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/init.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/init.mjs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +86,7 @@
       <workItem from="1604000287317" duration="18000" />
       <workItem from="1604000400174" duration="2865000" />
       <workItem from="1604362237574" duration="699000" />
-      <workItem from="1604936736874" duration="5162000" />
+      <workItem from="1604936736874" duration="5793000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1603999107466</created>
@@ -115,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604942411756</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="rename init extention to .mjs">
+      <created>1604943720263</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1604943720263</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,7 +146,8 @@
     <MESSAGE value="Initialize 3d printer" />
     <MESSAGE value="node modules" />
     <MESSAGE value="remove type module" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove type module" />
+    <MESSAGE value="rename init extention to .mjs" />
+    <option name="LAST_COMMIT_MESSAGE" value="rename init extention to .mjs" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1374" y="355" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604001068465">
@@ -173,10 +182,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1421" y="345" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1604000033838" />
-    <state x="1512" y="437" key="Vcs.Push.Dialog.v2" timestamp="1604942414092">
+    <state x="1512" y="437" key="Vcs.Push.Dialog.v2" timestamp="1604943722730">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1512" y="437" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1604942414092" />
+    <state x="1512" y="437" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1604943722730" />
     <state x="1753" y="438" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1604940632370">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
