@@ -1,5 +1,6 @@
 {
   "name": "3dprintcontroller",
+  "type": "module",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "3d-printer-controller": "^1.0.3",
     "express": "^4.17.1"
   }
 }
