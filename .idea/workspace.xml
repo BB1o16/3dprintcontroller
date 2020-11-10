@@ -19,13 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbe93722-3639-49b1-8b80-45376e223afb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-    </list>
+    <list default="true" id="fbe93722-3639-49b1-8b80-45376e223afb" name="Default Changelist" comment="added login page using login.html and index.js. npm install express-session" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -83,6 +77,14 @@
       <updated>1603998812277</updated>
       <workItem from="1603998813332" duration="26000" />
     </task>
+    <task id="LOCAL-00001" summary="added login page using login.html and index.js. npm install express-session">
+      <created>1604972652254</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1604972652254</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,31 +111,39 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added login page using login.html and index.js. npm install express-session" />
+    <option name="LAST_COMMIT_MESSAGE" value="added login page using login.html and index.js. npm install express-session" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="621" y="101" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604951482903">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
     <state x="621" y="101" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1707.920@0.0.1707.920" timestamp="1604951482903" />
-    <state width="914" height="227" key="GridCell.Tab.0.bottom" timestamp="1604972487497">
+    <state width="914" height="227" key="GridCell.Tab.0.bottom" timestamp="1604972726429">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="914" height="227" key="GridCell.Tab.0.bottom/0.0.1707.920@0.0.1707.920" timestamp="1604972487497" />
-    <state width="914" height="227" key="GridCell.Tab.0.center" timestamp="1604972487496">
+    <state width="914" height="227" key="GridCell.Tab.0.bottom/0.0.1707.920@0.0.1707.920" timestamp="1604972726429" />
+    <state width="914" height="227" key="GridCell.Tab.0.center" timestamp="1604972726429">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="914" height="227" key="GridCell.Tab.0.center/0.0.1707.920@0.0.1707.920" timestamp="1604972487496" />
-    <state width="914" height="227" key="GridCell.Tab.0.left" timestamp="1604972487496">
+    <state width="914" height="227" key="GridCell.Tab.0.center/0.0.1707.920@0.0.1707.920" timestamp="1604972726429" />
+    <state width="914" height="227" key="GridCell.Tab.0.left" timestamp="1604972726429">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="914" height="227" key="GridCell.Tab.0.left/0.0.1707.920@0.0.1707.920" timestamp="1604972487496" />
-    <state width="914" height="227" key="GridCell.Tab.0.right" timestamp="1604972487497">
+    <state width="914" height="227" key="GridCell.Tab.0.left/0.0.1707.920@0.0.1707.920" timestamp="1604972726429" />
+    <state width="914" height="227" key="GridCell.Tab.0.right" timestamp="1604972726429">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="914" height="227" key="GridCell.Tab.0.right/0.0.1707.920@0.0.1707.920" timestamp="1604972487497" />
+    <state width="914" height="227" key="GridCell.Tab.0.right/0.0.1707.920@0.0.1707.920" timestamp="1604972726429" />
     <state x="330" y="60" key="MergeDialog" timestamp="1604951429790">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
     <state x="330" y="60" key="MergeDialog/0.0.1707.920@0.0.1707.920" timestamp="1604951429790" />
+    <state x="824" y="179" key="Vcs.Push.Dialog.v2" timestamp="1604972668101">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state x="824" y="179" key="Vcs.Push.Dialog.v2/0.0.1707.920@0.0.1707.920" timestamp="1604972668101" />
     <state x="1049" y="360" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604965125242">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
