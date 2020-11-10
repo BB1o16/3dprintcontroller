@@ -1,12 +1,49 @@
-const express = require("express");
+//var mysql = require('mysql');
+const express = require('express');
+const session = require('express-session');
+const bodyParser = require('body-parser');
+const path = require('path');
+
 const app = express();
+app.use(session({
+    secret: 'secret',
+    resave: true,
+    saveUninitialized: true
+}));
+app.use(bodyParser.urlencoded({extended : true}));
+app.use(bodyParser.json());
 
-// The HelloWorld
-app.get("/", (req, res) => {
-    res.send("Hello from Node.js!");
+app.get('/', function(request, response) {
+    response.sendFile(path.join(__dirname + '/login.html'));
 });
 
-const port = process.env.PORT || 3000;
-app.listen(port, () => {
-    console.log(`App listening on http://localhost:${port}`);
+app.post('/auth', function(request, response) {
+    const username = request.body.username;
+    const password = request.body.password;
+    let success;
+    if (username === 'admin' && password === 'admin') {
+        success = true;
+        if (success === success) {
+            request.session.loggedin = true;
+            request.session.username = username;
+            response.redirect('/home');
+        } else {
+            response.send('Incorrect Username and/or Password!');
+        }
+        response.end();
+    } else {
+        response.send('Please enter Username and Password!');
+        response.end();
+    }
 });
+
+app.get('/home', function(request, response) {
+    if (request.session.loggedin) {
+        response.send('Welcome back, ' + request.session.username + '!');
+    } else {
+        response.send('Please login to view this page!');
+    }
+    response.end();
+});
+
+app.listen(3000);
