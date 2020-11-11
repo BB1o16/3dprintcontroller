@@ -1,7 +1,6 @@
 import { StreamCamera, Codec } from "pi-camera-connect";
 import * as fs from "fs";
 
-// Capture 5 seconds of H264 video and save to disk
 const runApp = async () => {
 
     const streamCamera = new StreamCamera({
@@ -12,10 +11,16 @@ const runApp = async () => {
 
     const writeStream = fs.createWriteStream("video-stream.h264");
 
+    // Pipe the video stream to our video file
     videoStream.pipe(writeStream);
 
     await streamCamera.startCapture();
 
+    // We can also listen to data events as they arrive
+    videoStream.on("data", data => console.log("New data", data));
+    videoStream.on("end", data => console.log("Video stream has ended"));
+
+    // Wait for 5 seconds
     await new Promise(resolve => setTimeout(() => resolve(), 5000));
 
     await streamCamera.stopCapture();
