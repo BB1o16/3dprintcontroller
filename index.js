@@ -1,4 +1,3 @@
-//const express = require('express');
 const session = require('express-session');
 const bodyParser = require('body-parser');
 const path = require('path');
@@ -21,6 +20,10 @@ app.get('/', function(request, response) {
     response.sendFile(path.join(__dirname + '/index.html'));
 });
 
+app.get('/home', function(request, response) {
+    response.sendFile(path.join(__dirname + '/home.html'));
+});
+
 app.post('/auth', function(request, response) {
     const username = request.body.username;
     const password = request.body.password;
@@ -41,19 +44,22 @@ app.post('/auth', function(request, response) {
     }
 });
 
+/*
 app.get('/home', function(request, response) {
     if (request.session.loggedin) {
         response.send('Welcome back, ' + request.session.username + '!');
+        socket.send('image', 'home.html')
     } else {
         response.send('Please login to view this page!');
     }
     response.end();
 });
+*/
 
 setInterval(() => {
     const frame = wCap.read();
     const image = cv.imencode('.jpg', frame).toString('base64');
     io.emit('image', image);
-}, 1000)
+}, 100)
 
 server.listen(3000);

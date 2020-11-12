@@ -14,9 +14,15 @@
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "express-session": "^1.17.1",
+    "opencv4nodejs": "^5.6.0",
     "pi-camera-connect": "^0.3.3",
-    "socket.io": "^3.0.1",
-    "opencv4nodejs": "^5.6.0"
+    "socket.io": "^3.0.1"
+  },
+  "opencv4nodejs": {
+    "disableAutoBuild": 1,
+    "opencvIncludeDir": "C:\\tools\\opencv\\build\\include",
+    "opencvLibDir": "C:\\tools\\opencv\\build\\x64\\vc14\\lib",
+    "opencvBinDir": "C:\\tools\\opencv\\build\\x64\\vc14\\bin"
   },
   "devDependencies": {},
   "repository": {
