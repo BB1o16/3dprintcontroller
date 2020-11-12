@@ -20,12 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fbe93722-3639-49b1-8b80-45376e223afb" name="Default Changelist" comment="live camera feed">
-      <change afterPath="$PROJECT_DIR$/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/livefeed.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/livefeed.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/body-parser/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/body-parser/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/livefeed.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/express/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/video-stream.h264" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +77,9 @@
     <configuration name="home.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/3dprintcontroller/home.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/3dprintcontroller/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="index.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/index.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
@@ -85,6 +91,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="JavaScript Debug.home.html" />
         <item itemvalue="Node.js.livefeed.mjs" />
         <item itemvalue="Node.js.init.mjs" />
@@ -107,7 +114,8 @@
       <workItem from="1604000400174" duration="2865000" />
       <workItem from="1604362237574" duration="699000" />
       <workItem from="1604936736874" duration="6017000" />
-      <workItem from="1605126034952" duration="3819000" />
+      <workItem from="1605126034952" duration="10463000" />
+      <workItem from="1605144357193" duration="2039000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1603999107466</created>
@@ -158,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605130035679</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="live camera feed">
+      <created>1605136082971</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1605136082971</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,6 +203,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="live camera feed" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="1546" y="382" key="#Inspections" timestamp="1605138866249">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1546" y="382" key="#Inspections/0.0.2560.1400@0.0.2560.1400" timestamp="1605138866249" />
     <state x="1374" y="355" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604001068465">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -200,37 +219,37 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1781" y="602" key="Github.ShareDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1603999140950" />
-    <state width="1257" height="395" key="GridCell.Tab.0.bottom" timestamp="1605135633530">
+    <state width="1258" height="392" key="GridCell.Tab.0.bottom" timestamp="1605145789932">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1257" height="395" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1605135633530" />
-    <state width="1257" height="395" key="GridCell.Tab.0.center" timestamp="1605135633530">
+    <state width="1258" height="392" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1605145789932" />
+    <state width="1258" height="392" key="GridCell.Tab.0.center" timestamp="1605145789932">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1257" height="395" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1605135633530" />
-    <state width="1257" height="395" key="GridCell.Tab.0.left" timestamp="1605135633530">
+    <state width="1258" height="392" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1605145789932" />
+    <state width="1258" height="392" key="GridCell.Tab.0.left" timestamp="1605145789932">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1257" height="395" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1605135633530" />
-    <state width="1257" height="395" key="GridCell.Tab.0.right" timestamp="1605135633530">
+    <state width="1258" height="392" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1605145789932" />
+    <state width="1258" height="392" key="GridCell.Tab.0.right" timestamp="1605145789932">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1257" height="395" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1605135633530" />
+    <state width="1258" height="392" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1605145789932" />
     <state x="1421" y="345" key="SettingsEditor" timestamp="1604000033838">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1421" y="345" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1604000033838" />
-    <state x="1512" y="437" key="Vcs.Push.Dialog.v2" timestamp="1605130038972">
+    <state x="1512" y="437" key="Vcs.Push.Dialog.v2" timestamp="1605136085693">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1512" y="437" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1605130038972" />
+    <state x="1512" y="437" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1605136085693" />
     <state x="1753" y="438" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1604940632370">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1753" y="438" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1604940632370" />
-    <state x="1737" y="618" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605129590051">
+    <state x="1737" y="618" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605141487266">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1737" y="618" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1400@0.0.2560.1400" timestamp="1605129590051" />
+    <state x="1737" y="618" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1400@0.0.2560.1400" timestamp="1605141487266" />
   </component>
 </project>
