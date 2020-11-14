@@ -1,20 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Create two unequal columns that floats next to each other */
+        .column {
+            float: left;
+            padding: 10px;
+        }
+
+        /*left column*/
+        .left {
+            width: 45%;
+        }
+
+        /*right column*/
+        .live-feed {
+            width: 55%;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+
 </head>
 <body>
-<div class="live-feed">
-    <img id="image">
-    <script src="/socket.io/socket.io.js"></script>
-    <script>
-        const socket = io();
-        socket.on('image', (image) => {
-            const imageElm = document.getElementById('image');
-            imageElm.src = `data:image/jpeg;base64,${image}`;
-        })
-    </script>
+
+<div class="row">
+
+    <div class="column left" >
+
+        <!-- Printer Status-->
+        <p> Printer Status:</p>
+
+        <!-- File Name -->
+        <p>File:</p>
+
+        <!-- Print Time -->
+        <p> Print time:</p>
+
+        <!-- Stop and Pause Buttons -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            .btn {
+                background-color: white;
+                padding: 14px 28px;
+                font-size: 16px;
+                cursor: pointer;
+                display: inline-block;
+            }
+
+            .btn:hover {background: #eee;}
+
+            .stop {color: black;}
+            .pause {color: black;}
+        </style>
+
+        <button class="btn stop">Stop</button>
+        <button class="btn pause">Pause</button>
+
+        <form action="/action_page.php">   <!-- Replace with code for .gcode -->
+            </br>
+            <input type="file" id="myFile" name="filename">
+            <input type="submit">
+        </form>
+
+        <!-- Nozzle Temperature -->
+        <p> Nozzle Temperature:</p>
+
+        <!-- Bed Temperature -->
+        <p> Bed Temperature:</p>
+
+        <!-- Start Button to start printing -->
+        <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <style>
+                .btn {
+                    background-color: white;
+                    padding: 14px 28px;
+                    font-size: 16px;
+                    cursor: pointer;
+                    display: inline-block;
+                }
+
+                .btn:hover {background: #eee;}
+
+                .start {color: black;}
+            </style>
+        </head>
+
+        <button class="btn start">Start</button>
+    </div>
+
+    <!-- Right Column where live feed camera will stream -->
+    <div class="live-feed column">
+        <h1> Live Camera Feed</h1>
+        <img float="right" id="image">
+        <script src="/socket.io/socket.io.js"></script>
+        <script>
+            const socket = io();
+            socket.on('image', (image) => {
+                const imageElm = document.getElementById('image');
+                imageElm.src = `data:image/jpeg;base64,${image}`;
+            })
+        </script>
+    </div>
 </div>
 </body>
-</html>
