@@ -18,7 +18,10 @@
     "pi-camera-connect": "^0.3.3",
     "socket.io": "^3.0.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@serialport/parser-readline": "^9.0.1",
+    "serialport": "^9.0.2"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BB1o16/3dprintcontroller.git"

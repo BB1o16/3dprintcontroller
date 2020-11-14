@@ -49,4 +49,6 @@ setInterval(() => {
     io.emit('image', image);
 }, 100)
 
+this.port = new SerialPort
+
 server.listen(3000);
