@@ -5,7 +5,6 @@ const cv = require('opencv4nodejs');
 const app = require('express')();
 const server = require('http').createServer(app);
 const io = require('socket.io')(server);
-
 const wCap = new cv.VideoCapture(0);
 
 app.use(session({
@@ -43,18 +42,6 @@ app.post('/auth', function(request, response) {
         response.end();
     }
 });
-
-/*
-app.get('/home', function(request, response) {
-    if (request.session.loggedin) {
-        response.send('Welcome back, ' + request.session.username + '!');
-        socket.send('image', 'home.html')
-    } else {
-        response.send('Please login to view this page!');
-    }
-    response.end();
-});
-*/
 
 setInterval(() => {
     const frame = wCap.read();

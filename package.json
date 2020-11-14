@@ -18,6 +18,9 @@
     "pi-camera-connect": "^0.3.3",
     "socket.io": "^3.0.1"
   },
+  "opencv4nodejs": {
+    "disableAutoBuild": 1
+  },
   "devDependencies": {},
   "repository": {
     "type": "git",
