@@ -19,11 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbe93722-3639-49b1-8b80-45376e223afb" name="Default Changelist" comment="live camera feed">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_9_2020_2_33_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_9_2020_2_33_PM__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_9_2020_8_50_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_9_2020_8_50_PM__Default_Changelist_.xml" afterDir="false" />
+    <list default="true" id="fbe93722-3639-49b1-8b80-45376e223afb" name="Default Changelist" comment="Added Package Dependencies">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -123,7 +120,7 @@
       <workItem from="1605147555820" duration="517000" />
       <workItem from="1605148821392" duration="4697000" />
       <workItem from="1605214433593" duration="19000" />
-      <workItem from="1605377663050" duration="867000" />
+      <workItem from="1605377663050" duration="1997000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1603999107466</created>
@@ -209,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605152473545</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Added Package Dependencies">
+      <created>1605378826073</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1605378826073</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,7 +240,8 @@
     <MESSAGE value="rename init extention to .mjs" />
     <MESSAGE value="changed com port" />
     <MESSAGE value="live camera feed" />
-    <option name="LAST_COMMIT_MESSAGE" value="live camera feed" />
+    <MESSAGE value="Added Package Dependencies" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Package Dependencies" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1546" y="382" key="#Inspections" timestamp="1605138866249">
@@ -255,42 +260,42 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1781" y="602" key="Github.ShareDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1603999140950" />
-    <state width="1258" height="399" key="GridCell.Tab.0.bottom" timestamp="1605378412835">
+    <state width="1258" height="399" key="GridCell.Tab.0.bottom" timestamp="1605379647742">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1686" height="228" key="GridCell.Tab.0.bottom/0.0.1707.920@0.0.1707.920" timestamp="1605336051703" />
-    <state width="1258" height="399" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1605378412835" />
-    <state width="1258" height="399" key="GridCell.Tab.0.center" timestamp="1605378412835">
+    <state width="1258" height="399" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1605379647742" />
+    <state width="1258" height="399" key="GridCell.Tab.0.center" timestamp="1605379647742">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1686" height="228" key="GridCell.Tab.0.center/0.0.1707.920@0.0.1707.920" timestamp="1605336051703" />
-    <state width="1258" height="399" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1605378412835" />
-    <state width="1258" height="399" key="GridCell.Tab.0.left" timestamp="1605378412834">
+    <state width="1258" height="399" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1605379647742" />
+    <state width="1258" height="399" key="GridCell.Tab.0.left" timestamp="1605379647742">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1686" height="228" key="GridCell.Tab.0.left/0.0.1707.920@0.0.1707.920" timestamp="1605336051703" />
-    <state width="1258" height="399" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1605378412834" />
-    <state width="1258" height="399" key="GridCell.Tab.0.right" timestamp="1605378412835">
+    <state width="1258" height="399" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1605379647742" />
+    <state width="1258" height="399" key="GridCell.Tab.0.right" timestamp="1605379647742">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1686" height="228" key="GridCell.Tab.0.right/0.0.1707.920@0.0.1707.920" timestamp="1605336051703" />
-    <state width="1258" height="399" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1605378412835" />
+    <state width="1258" height="399" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1605379647742" />
     <state x="1421" y="345" key="SettingsEditor" timestamp="1604000033838">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1421" y="345" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1604000033838" />
-    <state x="1512" y="437" key="Vcs.Push.Dialog.v2" timestamp="1605152539900">
+    <state x="1512" y="437" key="Vcs.Push.Dialog.v2" timestamp="1605378829332">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1512" y="437" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1605152539900" />
-    <state x="1753" y="438" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1605146577517">
+    <state x="1512" y="437" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1605378829332" />
+    <state x="1753" y="438" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1605379128557">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1753" y="438" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1605146577517" />
-    <state x="1158" y="406" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605318379798">
-      <screen x="0" y="0" width="1707" height="920" />
+    <state x="1753" y="438" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1605379128557" />
+    <state x="1737" y="618" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605378760928">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1158" y="406" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1707.920@0.0.1707.920" timestamp="1605318379798" />
-    <state x="1737" y="618" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1400@0.0.2560.1400" timestamp="1605152418978" />
+    <state x="1737" y="618" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1400@0.0.2560.1400" timestamp="1605378760928" />
   </component>
 </project>
