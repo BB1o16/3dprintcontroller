@@ -34,11 +34,9 @@
 <body>
 
 <div class="row">
-
     <div class="column left" >
-
         <!-- Printer Status-->
-        <p> Printer Status:</p>
+        <p id="status">Printer Status:</p>
 
         <!-- File Name -->
         <p>File:</p>
@@ -96,7 +94,12 @@
             </style>
         </head>
 
-        <button class="btn start">Start</button>
+        <button id="start" class="btn start">Start</button>
+
+        <script src="/socket.io/socket.io.js"></script>
+        <script>
+
+        </script>
     </div>
 
     <!-- Right Column where live feed camera will stream -->

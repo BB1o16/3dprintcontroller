@@ -2,10 +2,32 @@ const session = require('express-session');
 const bodyParser = require('body-parser');
 const path = require('path');
 const cv = require('opencv4nodejs');
-const app = require('express')();
+const express = require("express");
+const app = express();
 const server = require('http').createServer(app);
 const io = require('socket.io')(server);
 const wCap = new cv.VideoCapture(0);
+
+
+// Serialport to 3d printer
+const SerialPort = require('serialport');
+const Readline = SerialPort.parsers.Readline;
+const port = new SerialPort('/dev/ttyUSB0', {baudRate: 115200});
+const lineStream = port.pipe(new Readline());
+
+port.on('open', function () {
+    console.log('Connected!')
+
+    lineStream.on('data', function (data) {
+        console.log('Data:', data);
+    });
+
+    // Command to Auto Home
+    const command = Buffer.from('G28');
+    setTimeout(function () {port.write(command), console.log(command)}, 5000);
+});
+
+
 
 app.use(session({
     secret: 'secret',
@@ -15,12 +37,15 @@ app.use(session({
 app.use(bodyParser.urlencoded({extended : true}));
 app.use(bodyParser.json());
 
+app.set('view engine', 'ejs');
+app.use('/static', express.static('./static/'));
+
 app.get('/', function(request, response) {
-    response.sendFile(path.join(__dirname + '/index.html'));
+    response.sendFile(path.join(__dirname + '/static/index.html'));
 });
 
 app.get('/home', function(request, response) {
-    response.sendFile(path.join(__dirname + '/home.html'));
+    response.sendFile(path.join(__dirname + '/static/home.html'));
 });
 
 app.post('/auth', function(request, response) {
