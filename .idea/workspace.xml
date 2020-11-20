@@ -19,19 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbe93722-3639-49b1-8b80-45376e223afb" name="Default Changelist" comment="code mistake fix">
-      <change afterPath="$PROJECT_DIR$/static/printer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_9_2020_2_33_PM_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_9_2020_2_33_PM__Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_9_2020_8_50_PM_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_9_2020_8_50_PM__Default_Changelist_.xml" beforeDir="false" />
+    <list default="true" id="fbe93722-3639-49b1-8b80-45376e223afb" name="Default Changelist" comment="live camera feed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/printerinit.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,21 +32,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="JavaScript File" />
-        <option value="tsconfig.json" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
-  </component>
-  <component name="JsFlowSettings">
-    <service-enabled>true</service-enabled>
-    <exe-path />
-    <other-services-enabled>true</other-services-enabled>
-    <auto-save>true</auto-save>
   </component>
   <component name="ProjectId" id="1jZ5XX0UxsrfSrYjZO5iPmFRAge" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -70,10 +53,10 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="javascript.nodejs.core.library.configured.version" value="14.15.0" />
-    <property name="javascript.nodejs.core.library.typings.version" value="14.14.9" />
-    <property name="js.last.introduce.type" value="CONST" />
+    <property name="javascript.nodejs.core.library.configured.version" value="12.18.4" />
+    <property name="javascript.nodejs.core.library.typings.version" value="12.19.3" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -84,46 +67,36 @@
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.general" />
-    <property name="ts.external.directory.path" value="E:\WebStorm 2020.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\GitRepository\3dprintcontroller" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\GitRepository\3dprintcontroller\static" />
-      <recent name="E:\GitRepository\3dprintcontroller" />
-      <recent name="E:\GitRepository\3dprintcontroller\scripts" />
       <recent name="D:\3dprintcontroller" />
     </key>
   </component>
   <component name="RunManager" selected="Node.js.index.js">
-    <configuration name="home.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/3dprintcontroller/scripts/home.html" useBuiltInWebServerPort="true">
+    <configuration name="home.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/3dprintcontroller/home.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/3dprintcontroller/scripts/index.html" useBuiltInWebServerPort="true">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/3dprintcontroller/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="index.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/index.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
+    <configuration name="init.mjs" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/init.mjs" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
     <configuration name="livefeed.mjs" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/livefeed.mjs" working-dir="$PROJECT_DIR$">
-      <method v="2" />
-    </configuration>
-    <configuration name="printer.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/static/printer.js" working-dir="$PROJECT_DIR$">
-      <method v="2" />
-    </configuration>
-    <configuration name="printerinit.mjs" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/scripts/printerinit.mjs" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Node.js.printer.js" />
         <item itemvalue="JavaScript Debug.home.html" />
-        <item itemvalue="Node.js.printerinit.mjs" />
         <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="Node.js.livefeed.mjs" />
+        <item itemvalue="Node.js.init.mjs" />
       </list>
     </recent_temporary>
   </component>
@@ -148,15 +121,6 @@
       <workItem from="1605147555820" duration="517000" />
       <workItem from="1605148821392" duration="4697000" />
       <workItem from="1605214433593" duration="19000" />
-      <workItem from="1605377663050" duration="20215000" />
-      <workItem from="1605742893609" duration="8386000" />
-      <workItem from="1605752333588" duration="1886000" />
-      <workItem from="1605754336916" duration="8431000" />
-      <workItem from="1605763958925" duration="5782000" />
-      <workItem from="1605799644591" duration="6259000" />
-      <workItem from="1605806086837" duration="370000" />
-      <workItem from="1605806468755" duration="13865000" />
-      <workItem from="1605821233837" duration="10832000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1603999107466</created>
@@ -242,35 +206,7 @@
       <option name="project" value="LOCAL" />
       <updated>1605152473545</updated>
     </task>
-    <task id="LOCAL-00013" summary="Added Package Dependencies">
-      <created>1605378826073</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1605378826073</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Fixed Package Dependencies">
-      <created>1605379691841</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1605379691841</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Setup printerinit.js to detect 3d printer if connected">
-      <created>1605388662960</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1605388662960</updated>
-    </task>
-    <task id="LOCAL-00016" summary="code mistake fix">
-      <created>1605388729340</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1605388729340</updated>
-    </task>
-    <option name="localTasksCounter" value="17" />
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -297,11 +233,7 @@
     <MESSAGE value="rename init extention to .mjs" />
     <MESSAGE value="changed com port" />
     <MESSAGE value="live camera feed" />
-    <MESSAGE value="Added Package Dependencies" />
-    <MESSAGE value="Fixed Package Dependencies" />
-    <MESSAGE value="Setup printerinit.js to detect 3d printer if connected" />
-    <MESSAGE value="code mistake fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="code mistake fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="live camera feed" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1546" y="382" key="#Inspections" timestamp="1605138866249">
@@ -312,10 +244,6 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1374" y="355" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1604001068465" />
-    <state x="1674" y="502" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605830173192">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="1674" y="502" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1605830173192" />
     <state x="1700" y="445" key="FileChooserDialogImpl" timestamp="1603998891205">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -324,90 +252,42 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1781" y="602" key="Github.ShareDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1603999140950" />
-    <state width="1258" height="391" key="GridCell.Tab.0.bottom" timestamp="1605831452964">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state width="1686" height="228" key="GridCell.Tab.0.bottom" timestamp="1605833680428">
+      <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="1686" height="228" key="GridCell.Tab.0.bottom/0.0.1707.920@0.0.1707.920" timestamp="1605336051703" />
-    <state width="1258" height="391" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1605831452964" />
-    <state width="1258" height="391" key="GridCell.Tab.0.center" timestamp="1605831452964">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state width="1686" height="228" key="GridCell.Tab.0.bottom/0.0.1707.920@0.0.1707.920" timestamp="1605833680428" />
+    <state width="1258" height="391" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1605153540786" />
+    <state width="1686" height="228" key="GridCell.Tab.0.center" timestamp="1605833680428">
+      <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="1686" height="228" key="GridCell.Tab.0.center/0.0.1707.920@0.0.1707.920" timestamp="1605336051703" />
-    <state width="1258" height="391" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1605831452964" />
-    <state width="1258" height="391" key="GridCell.Tab.0.left" timestamp="1605831452963">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state width="1686" height="228" key="GridCell.Tab.0.center/0.0.1707.920@0.0.1707.920" timestamp="1605833680428" />
+    <state width="1258" height="391" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1605153540786" />
+    <state width="1686" height="228" key="GridCell.Tab.0.left" timestamp="1605833680428">
+      <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="1686" height="228" key="GridCell.Tab.0.left/0.0.1707.920@0.0.1707.920" timestamp="1605336051703" />
-    <state width="1258" height="391" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1605831452963" />
-    <state width="1258" height="391" key="GridCell.Tab.0.right" timestamp="1605831452964">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state width="1686" height="228" key="GridCell.Tab.0.left/0.0.1707.920@0.0.1707.920" timestamp="1605833680428" />
+    <state width="1258" height="391" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1605153540786" />
+    <state width="1686" height="228" key="GridCell.Tab.0.right" timestamp="1605833680428">
+      <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="1686" height="228" key="GridCell.Tab.0.right/0.0.1707.920@0.0.1707.920" timestamp="1605336051703" />
-    <state width="1258" height="391" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1605831452964" />
-    <state width="1258" height="489" key="GridCell.Tab.1.bottom" timestamp="1605820686793">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1258" height="489" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1605820686793" />
-    <state width="1258" height="489" key="GridCell.Tab.1.center" timestamp="1605820686793">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1258" height="489" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1605820686793" />
-    <state width="1258" height="489" key="GridCell.Tab.1.left" timestamp="1605820686793">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1258" height="489" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1605820686793" />
-    <state width="1258" height="489" key="GridCell.Tab.1.right" timestamp="1605820686793">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1258" height="489" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1605820686793" />
-    <state width="1258" height="489" key="GridCell.Tab.2.bottom" timestamp="1605820686793">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1258" height="489" key="GridCell.Tab.2.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1605820686793" />
-    <state width="1258" height="489" key="GridCell.Tab.2.center" timestamp="1605820686793">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1258" height="489" key="GridCell.Tab.2.center/0.0.2560.1400@0.0.2560.1400" timestamp="1605820686793" />
-    <state width="1258" height="489" key="GridCell.Tab.2.left" timestamp="1605820686793">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1258" height="489" key="GridCell.Tab.2.left/0.0.2560.1400@0.0.2560.1400" timestamp="1605820686793" />
-    <state width="1258" height="489" key="GridCell.Tab.2.right" timestamp="1605820686793">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1258" height="489" key="GridCell.Tab.2.right/0.0.2560.1400@0.0.2560.1400" timestamp="1605820686793" />
-    <state width="1258" height="489" key="GridCell.Tab.3.bottom" timestamp="1605820686794">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1258" height="489" key="GridCell.Tab.3.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1605820686794" />
-    <state width="1258" height="489" key="GridCell.Tab.3.center" timestamp="1605820686794">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1258" height="489" key="GridCell.Tab.3.center/0.0.2560.1400@0.0.2560.1400" timestamp="1605820686794" />
-    <state width="1258" height="489" key="GridCell.Tab.3.left" timestamp="1605820686794">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1258" height="489" key="GridCell.Tab.3.left/0.0.2560.1400@0.0.2560.1400" timestamp="1605820686794" />
-    <state width="1258" height="489" key="GridCell.Tab.3.right" timestamp="1605820686794">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1258" height="489" key="GridCell.Tab.3.right/0.0.2560.1400@0.0.2560.1400" timestamp="1605820686794" />
+    <state width="1686" height="228" key="GridCell.Tab.0.right/0.0.1707.920@0.0.1707.920" timestamp="1605833680428" />
+    <state width="1258" height="391" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1605153540786" />
     <state x="1421" y="345" key="SettingsEditor" timestamp="1604000033838">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1421" y="345" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1604000033838" />
-    <state x="1512" y="437" key="Vcs.Push.Dialog.v2" timestamp="1605388730659">
+    <state x="1512" y="437" key="Vcs.Push.Dialog.v2" timestamp="1605152539900">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1512" y="437" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1605388730659" />
-    <state x="1753" y="438" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1605379128557">
+    <state x="1512" y="437" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1605152539900" />
+    <state x="1753" y="438" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1605146577517">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1753" y="438" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1605379128557" />
-    <state x="1737" y="618" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605392803152">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="1753" y="438" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1605146577517" />
+    <state x="1158" y="406" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605318379798">
+      <screen x="0" y="0" width="1707" height="920" />
     </state>
     <state x="1158" y="406" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1707.920@0.0.1707.920" timestamp="1605318379798" />
-    <state x="1737" y="618" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1400@0.0.2560.1400" timestamp="1605392803152" />
+    <state x="1737" y="618" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1400@0.0.2560.1400" timestamp="1605152418978" />
   </component>
 </project>

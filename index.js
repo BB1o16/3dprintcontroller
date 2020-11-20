@@ -23,7 +23,7 @@ port.on('open', function () {
     });
 
     // Command to Auto Home
-    const command = Buffer.from('G28');
+    const command = Buffer.from('G28 X0 Y0 Z0'); //'G28'
     setTimeout(function () {port.write(command), console.log(command)}, 5000);
 });
 
