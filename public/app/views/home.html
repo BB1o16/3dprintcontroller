@@ -38,6 +38,8 @@
         <!-- Printer Status-->
         <p id="status">Printer Status:</p>
 
+        <button id="connect" class="btn connect" onclick="init()">Connect Printer</button>
+
         <!-- File Name -->
         <p>File:</p>
 
@@ -64,10 +66,15 @@
         <button class="btn stop">Stop</button>
         <button class="btn pause">Pause</button>
 
-        <form action="/action_page.php">   <!-- Replace with code for .gcode -->
-            </br>
-            <input type="file" id="myFile" name="filename">
-            <input type="submit">
+        </br>
+
+        <form ref='uploadForm'
+              id='uploadForm'
+              action='http://localhost:3000/upload'
+              method='post'
+              encType="multipart/form-data">
+            <input type="file" name="sampleFile" />
+            <input type='submit' value='Upload!' />
         </form>
 
         <!-- Nozzle Temperature -->
@@ -94,12 +101,13 @@
             </style>
         </head>
 
-        <button id="start" class="btn start">Start</button>
-
-        <script src="/socket.io/socket.io.js"></script>
         <script>
 
         </script>
+
+        <button id="start" class="btn start">Start</button>
+
+        <pre id="output"></pre>
     </div>
 
     <!-- Right Column where live feed camera will stream -->
