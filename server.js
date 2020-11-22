@@ -94,14 +94,13 @@ app.post('/upload', function(request, response) {
         const text = fs.readFileSync(uploadPath, "utf-8");
         const textByLine = text.split("\n");
 
-        //console.log(textByLine);
-
         // Print File
         (async function () {
             for (const x in textByLine) {
                 textByLine[x] = textByLine[x];
                 console.log(textByLine[x])
             }
+            await  myPrinter.sendGCode('G28');
             await myPrinter.sendGCode(textByLine);
         })();
 

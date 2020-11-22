@@ -38,13 +38,8 @@
         <!-- Printer Status-->
         <p id="status">Printer Status:</p>
 
-        <button id="connect" class="btn connect" onclick="init()">Connect Printer</button>
-
         <!-- File Name -->
         <p>File:</p>
-
-        <!-- Print Time -->
-        <p> Print time:</p>
 
         <!-- Stop and Pause Buttons -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -63,9 +58,6 @@
             .pause {color: black;}
         </style>
 
-        <button class="btn stop">Stop</button>
-        <button class="btn pause">Pause</button>
-
         </br>
 
         <form ref='uploadForm'
@@ -76,6 +68,9 @@
             <input type="file" name="sampleFile" />
             <input type='submit' value='Upload!' />
         </form>
+
+        <input type='submit' value='Pause' />
+        <input type='submit' value='Stop' />
 
         <!-- Nozzle Temperature -->
         <p> Nozzle Temperature:</p>
@@ -101,13 +96,7 @@
             </style>
         </head>
 
-        <script>
-
-        </script>
-
-        <button id="start" class="btn start">Start</button>
-
-        <pre id="output"></pre>
+        <pre id="output">--GCode File Output--</pre>
     </div>
 
     <!-- Right Column where live feed camera will stream -->
