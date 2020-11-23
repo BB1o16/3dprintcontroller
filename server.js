@@ -20,7 +20,7 @@ app.use(session({
 "use strict";
 
 // Printer Settings
-const myPrinter = new _dPrinterController.Printer("COM3", 115200, {
+const myPrinter = new _dPrinterController.Printer("/dev/ttyUSB0", 115200, {
     x: 220,
     y: 220,
     z: 250
@@ -91,21 +91,24 @@ app.post('/upload', function(request, response) {
             return response.status(500).send(err);
         }
 
-        const text = fs.readFileSync(uploadPath, "utf-8");
-        const textByLine = text.split("\n");
-
-        // Print File
-        (async function () {
-            for (const x in textByLine) {
-                textByLine[x] = textByLine[x];
-                console.log(textByLine[x])
-            }
-            await  myPrinter.sendGCode('G28');
-            await myPrinter.sendGCode(textByLine);
-        })();
+        printFile(uploadPath);
 
     });
 });
+
+// Print
+function printFile(path) {
+    const text = fs.readFileSync(path, "utf-8");
+    const textByLine = text.split("\n");
+
+    // Print File
+    (async function () {
+        for (const x in textByLine) {
+            console.log(textByLine[x])
+        }
+        await myPrinter.sendGCode(textByLine);
+    })();
+}
 
 // Live Feed
 setInterval(() => {
