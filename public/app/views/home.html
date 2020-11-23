@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<html>
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
@@ -35,11 +37,12 @@
 
 <div class="row">
     <div class="column left" >
-        <!-- Printer Status-->
-        <p id="status">Printer Status:</p>
 
-        <!-- File Name -->
-        <p>File:</p>
+        <!-- Printer Status-->
+        <p id="status">Printer Status: </p>
+
+        <!-- File Name-->
+        <p id="fileName">File Name: </p>
 
         <!-- Stop and Pause Buttons -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -65,8 +68,29 @@
               action='upload'
               method='post'
               encType="multipart/form-data">
-            <input type="file" name="sampleFile" />
+            <input type="file" name="sampleFile" id="fileInput"/>
             <input type='submit' value='Upload!' />
+
+
+            <script type="text/javascript">
+                const fileInput = document.getElementById('fileInput');
+                // Output Text HTML
+                fileInput.addEventListener("change", function() {
+                    if (this.files && this.files[0]) {
+                        const myFile = this.files[0];
+                        const reader = new FileReader();
+
+                        reader.addEventListener('load', function(e) {
+                            document.getElementById("output").innerText = e.target.result;
+                            document.getElementById("fileName").innerHTML += fileInput.value.split(/(\\|\/)/g).pop();
+                            document.getElementById("status").innerHTML += ' Connected! '
+                        });
+
+                        reader.readAsText(myFile);
+                    }
+                });
+            </script>
+
         </form>
 
         <form ref="stopForm"
@@ -76,14 +100,14 @@
             <input type='submit' value='Stop' />
         </form>
 
-        <input type='submit' value='Pause' />
+        <form ref="pauseForm"
+              id="pauseForm"
+              action="pause"
+              method="post">
+            <input type='submit' value='Pause' />
+        </form>
 
-
-        <!-- Nozzle Temperature -->
-        <p> Nozzle Temperature:</p>
-
-        <!-- Bed Temperature -->
-        <p> Bed Temperature:</p>
+        <p id="warning"></p>
 
         <!-- Start Button to start printing -->
         <head>
@@ -103,7 +127,8 @@
             </style>
         </head>
 
-        <pre id="output">--GCode File Output--</pre>
+        <p>--------------------GCode File Output--------------------</p>
+        <div id="output"></div>
     </div>
 
     <!-- Right Column where live feed camera will stream -->
@@ -121,3 +146,4 @@
     </div>
 </div>
 </body>
+</html>

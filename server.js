@@ -100,7 +100,42 @@ app.post('/upload', function(request, response) {
 
 // Stop
 app.post('/stop', function (request, response) {
+    if (printStatus == true) {
+        (async function () {
+             const stopCommands = ['M140 S0', 'M107', 'G91', 'G1 E-2 F2700', 'G1 E-2 Z0.2 F2400',
+                'G1 X5 Y5 F3000', 'M106 S0', 'M104 S0', 'M140 S0', 'M84 X Y E'];
+            await myPrinter.sendGCode(stopCommands);
+            console.log(stopCommands);
+            printStatus = false;
+        })();
+    } else {
+        response.send('The printer is not started, can not stop.');
+    }
+})
 
+// Pause
+app.post('/pause', function (request, response) {
+    let isPaused = false;
+
+    if (printStatus == true) {
+        (async function () {
+            const pauseCommands = ['M117'];
+            await myPrinter.sendGCode(pauseCommands);
+            console.log(pauseCommands);
+            isPaused = true;
+            printStatus = false;
+        })();
+    } else if (isPaused == true) {
+        (async function () {
+            const pauseCommands = ['M117'];
+            await myPrinter.sendGCode(pauseCommands);
+            console.log(pauseCommands);
+            isPaused = false;
+            printStatus = true;
+        })();
+    } else {
+        response.send('The printer is not started, can not pause.');
+    }
 })
 
 // Print
@@ -112,27 +147,15 @@ function printFile(path) {
     (async function () {
         for (let i = 0; i < splitByLine.length; i++) {
             if (splitByLine[i].charAt(0) != ';') {
-                let command = splitByLine[i].split(';').slice(0, 1);
+                const command = splitByLine[i].split(';').slice(0, 1);
 
-                for (let j = 0; j < command.length; j++) {
-                    await myPrinter.sendGCode(command[j]);
-                    console.log(command[j]);
-                }
+                await myPrinter.sendGCode(command);
+                console.log(command);
             }
         }
 
         printStatus = true;
     })();
-}
-
-// Pause Print
-function pausePrint () {
-
-}
-
-// Stop Print
-function stopPrint () {
-
 }
 
 // Live Feed
