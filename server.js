@@ -34,6 +34,8 @@ const myPrinter = new _dPrinterController.Printer("/dev/ttyUSB0", 115200, {
 // Parse POST Data
 app.use(bodyParser.urlencoded({extended : true}));
 app.use(bodyParser.json());
+app.use(express.json({limit: '25mb'}));
+app.use(express.urlencoded({limit: '25mb'}));
 
 app.set('view engine', 'ejs');
 
