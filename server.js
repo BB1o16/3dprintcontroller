@@ -29,6 +29,7 @@ const myPrinter = new _dPrinterController.Printer("/dev/ttyUSB0", 115200, {
 // Initialize 3d Printer
 (async function () {
     await myPrinter.init();
+    await myPrinter.autoHome(["X", "Y", "Z"]);
 })();
 
 // Parse POST Data
