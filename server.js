@@ -104,9 +104,9 @@ function printFile(path) {
     // Print File
     (async function () {
         for (const x in textByLine) {
+            await myPrinter.sendGCode(textByLine[x]);
             console.log(textByLine[x])
         }
-        await myPrinter.sendGCode(textByLine);
     })();
 }
 
