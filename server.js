@@ -19,15 +19,15 @@ app.use(session({
 
 "use strict";
 
+// Printer Settings
+const myPrinter = new _dPrinterController.Printer("/dev/ttyUSB0", 115200, {
+    x: 220,
+    y: 220,
+    z: 250
+});
+
 // Initialize 3d Printer
 (async function () {
-    // Printer Settings
-    const myPrinter = new _dPrinterController.Printer("/dev/ttyUSB0", 115200, {
-        x: 220,
-        y: 220,
-        z: 250
-    });
-
     await myPrinter.init();
 })();
 
@@ -110,11 +110,16 @@ function printFile(path) {
 }
 
 // Live Feed
-setInterval(() => {
-    const frame = wCap.read();
-    const image = cv.imencode('.jpg', frame).toString('base64');
-    io.emit('image', image);
-}, 100)
+io.on('connection', function (socket) {
+    console.log("Connected to  the socket successfully");
+
+
+    setInterval(() => {
+        const frame = wCap.read();
+        const image = cv.imencode('.jpg', frame).toString('base64');
+        socket.emit('image', image);
+    }, 100)
+})
 
 server.listen(3000, function () {
     console.log(`Server listening on port ${3000}`);
