@@ -19,8 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbe93722-3639-49b1-8b80-45376e223afb" name="Default Changelist" comment="Update Code Test">
+    <list default="true" id="fbe93722-3639-49b1-8b80-45376e223afb" name="Default Changelist" comment="Update Code with Stop, Pause Functions, and HTML Status and File Name">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/app/views/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/app/views/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -162,7 +163,8 @@
       <workItem from="1606009302028" duration="4766000" />
       <workItem from="1606067626238" duration="1279000" />
       <workItem from="1606069209371" duration="827000" />
-      <workItem from="1606076540404" duration="14083000" />
+      <workItem from="1606076540404" duration="35442000" />
+      <workItem from="1606144467249" duration="7075000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1603999107466</created>
@@ -437,7 +439,77 @@
       <option name="project" value="LOCAL" />
       <updated>1606099404769</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Update Code Test">
+      <created>1606100467319</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1606100467319</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Update Code Test">
+      <created>1606100659060</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1606100659060</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Update Code Test">
+      <created>1606100786619</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1606100786619</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Update Code Test">
+      <created>1606100959286</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1606100959286</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Update Code Test">
+      <created>1606102568198</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1606102568198</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Update Code Test">
+      <created>1606108929801</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1606108929801</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Update Code Test">
+      <created>1606109233147</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1606109233147</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Update Code Test">
+      <created>1606112814987</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1606112814987</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Update Code Test">
+      <created>1606112997813</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1606112997813</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Update Code with Stop, Pause Functions, and HTML Status and File Name">
+      <created>1606122641222</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1606122641222</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -474,7 +546,8 @@
     <MESSAGE value="Pi USB Location" />
     <MESSAGE value="Update Code" />
     <MESSAGE value="Update Code Test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update Code Test" />
+    <MESSAGE value="Update Code with Stop, Pause Functions, and HTML Status and File Name" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update Code with Stop, Pause Functions, and HTML Status and File Name" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1546" y="382" key="#Inspections" timestamp="1605138866249">
@@ -501,26 +574,26 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1781" y="602" key="Github.ShareDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1603999140950" />
-    <state width="1258" height="381" key="GridCell.Tab.0.bottom" timestamp="1606070041788">
+    <state width="1258" height="383" key="GridCell.Tab.0.bottom" timestamp="1606159655441">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1686" height="228" key="GridCell.Tab.0.bottom/0.0.1707.920@0.0.1707.920" timestamp="1605336051703" />
-    <state width="1258" height="381" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1606070041788" />
-    <state width="1258" height="381" key="GridCell.Tab.0.center" timestamp="1606070041788">
+    <state width="1258" height="383" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1606159655441" />
+    <state width="1258" height="383" key="GridCell.Tab.0.center" timestamp="1606159655441">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1686" height="228" key="GridCell.Tab.0.center/0.0.1707.920@0.0.1707.920" timestamp="1605336051703" />
-    <state width="1258" height="381" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1606070041788" />
-    <state width="1258" height="381" key="GridCell.Tab.0.left" timestamp="1606070041788">
+    <state width="1258" height="383" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1606159655441" />
+    <state width="1258" height="383" key="GridCell.Tab.0.left" timestamp="1606159655441">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1686" height="228" key="GridCell.Tab.0.left/0.0.1707.920@0.0.1707.920" timestamp="1605336051703" />
-    <state width="1258" height="381" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1606070041788" />
-    <state width="1258" height="381" key="GridCell.Tab.0.right" timestamp="1606070041788">
+    <state width="1258" height="383" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1606159655441" />
+    <state width="1258" height="383" key="GridCell.Tab.0.right" timestamp="1606159655441">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1686" height="228" key="GridCell.Tab.0.right/0.0.1707.920@0.0.1707.920" timestamp="1605336051703" />
-    <state width="1258" height="381" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1606070041788" />
+    <state width="1258" height="383" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1606159655441" />
     <state width="1257" height="491" key="GridCell.Tab.1.bottom" timestamp="1605989100087">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -573,10 +646,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1421" y="345" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1604000033838" />
-    <state x="1512" y="437" key="Vcs.Push.Dialog.v2" timestamp="1606099406086">
+    <state x="1512" y="437" key="Vcs.Push.Dialog.v2" timestamp="1606122642298">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1512" y="437" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1606099406086" />
+    <state x="1512" y="437" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1606122642298" />
     <state x="1753" y="438" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1606014207074">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

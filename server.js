@@ -18,6 +18,7 @@ app.use(session({
 }));
 
 let printStatus = false;
+let isPaused = false;
 
 "use strict";
 
@@ -62,11 +63,11 @@ app.post('/auth', function(request, response) {
             request.session.username = username;
             response.redirect('/home');
         } else {
-            response.send('Incorrect Username and/or Password!');
+            response.send('Please enter Username and Password!');
         }
         response.end();
     } else {
-        response.send('Please enter Username and Password!');
+        response.send('Incorrect Username and/or Password!');
         response.end();
     }
 });
@@ -104,7 +105,8 @@ app.post('/stop', function (request, response) {
         (async function () {
              const stopCommands = ['M140 S0', 'M107', 'G91', 'G1 E-2 F2700', 'G1 E-2 Z0.2 F2400',
                 'G1 X5 Y5 F3000', 'M106 S0', 'M104 S0', 'M140 S0', 'M84 X Y E'];
-            await myPrinter.sendGCode(stopCommands);
+            //await myPrinter.sendGCode(stopCommands);
+            console.log("Printer is Stopping...");
             console.log(stopCommands);
             printStatus = false;
         })();
@@ -115,26 +117,31 @@ app.post('/stop', function (request, response) {
 
 // Pause
 app.post('/pause', function (request, response) {
-    let isPaused = false;
-
-    if (printStatus == true) {
+    if (printStatus == true && isPaused == false) {
         (async function () {
             const pauseCommands = ['M117'];
             await myPrinter.sendGCode(pauseCommands);
+            console.log("Printer is Pausing...");
             console.log(pauseCommands);
             isPaused = true;
-            printStatus = false;
         })();
-    } else if (isPaused == true) {
+
+    } else {
+        response.send('The printer is not started, can not pause.');
+    }
+
+})
+
+// Start
+app.post('/start', function (request, response) {
+   if (printStatus == true && isPaused == true) {
         (async function () {
             const pauseCommands = ['M117'];
             await myPrinter.sendGCode(pauseCommands);
+            console.log("Printer is Starting...");
             console.log(pauseCommands);
             isPaused = false;
-            printStatus = true;
         })();
-    } else {
-        response.send('The printer is not started, can not pause.');
     }
 })
 
@@ -143,18 +150,20 @@ function printFile(path) {
     const text = fs.readFileSync(path, "utf-8");
     const splitByLine = text.split('\r\n');
 
+    printStatus = true;
+
     // Print File
     (async function () {
+        let command;
+        //let commands;
+
         for (let i = 0; i < splitByLine.length; i++) {
             if (splitByLine[i].charAt(0) != ';') {
-                const command = splitByLine[i].split(';').slice(0, 1);
+                command = splitByLine[i].split(';').slice(0, 1);
 
                 await myPrinter.sendGCode(command);
-                console.log(command);
             }
         }
-
-        printStatus = true;
     })();
 }
 
