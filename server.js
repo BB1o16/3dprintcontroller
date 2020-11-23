@@ -113,7 +113,6 @@ function printFile(path) {
 io.on('connection', function (socket) {
     console.log("Connected to  the socket successfully");
 
-
     setInterval(() => {
         const frame = wCap.read();
         const image = cv.imencode('.jpg', frame).toString('base64');

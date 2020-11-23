@@ -105,7 +105,7 @@
         <img float="right" id="image">
         <script src="/socket.io/socket.io.js"></script>
         <script>
-            const socket = io('http://localhost:3000');
+            const socket = io();
             socket.on('image', (image) => {
                 const imageElm = document.getElementById('image');
                 imageElm.src = `data:image/jpeg;base64,${image}`;
