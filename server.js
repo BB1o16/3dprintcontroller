@@ -99,28 +99,29 @@ app.post('/upload', function(request, response) {
 // Print
 function printFile(path) {
     const text = fs.readFileSync(path, "utf-8");
-    const removeComments = text.replace(/^>.*/,'');
-    const textByLine = removeComments.split(";");
+    const textByLine = text.split(";");
+    const commands = [];
 
     // Print File
     (async function () {
         for (const x in textByLine) {
-            console.log(textByLine[x])
+            commands[x] = textByLine[x].replace(/^;.*$/m, '');
+            console.log(commands)
         }
-        await myPrinter.sendGCode(textByLine);
+        await myPrinter.sendGCode(commands);
     })();
 }
 
-// // Live Feed
-// io.on('connection', function (socket) {
-//     console.log("Connected to  the socket successfully");
-//
-//     setInterval(() => {
-//         const frame = wCap.read();
-//         const image = cv.imencode('.jpg', frame).toString('base64');
-//         socket.emit('image', image);
-//     }, 100)
-// })
+// Live Feed
+io.on('connection', function (socket) {
+    console.log("Connected to  the socket successfully");
+
+    setInterval(() => {
+        const frame = wCap.read();
+        const image = cv.imencode('.jpg', frame).toString('base64');
+        socket.emit('image', image);
+    }, 100)
+})
 
 server.listen(3000, function () {
     console.log(`Server listening on port ${3000}`);
