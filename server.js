@@ -104,11 +104,10 @@ function printFile(path) {
     // Print File
     (async function () {
         for (const x in textByLine) {
-            if (!textByLine.toString().startsWith(';')) {
-                await myPrinter.sendGCode(textByLine);
-                console.log(textByLine);
-            }
+            console.log(textByLine[x]);
         }
+
+        //await myPrinter.sendGCode(textByLine);
     })();
 }
 
