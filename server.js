@@ -17,6 +17,8 @@ app.use(session({
     saveUninitialized: true
 }));
 
+let printStatus = false;
+
 "use strict";
 
 // Printer Settings
@@ -96,16 +98,44 @@ app.post('/upload', function(request, response) {
     }
 });
 
+// Stop
+app.post('/stop', function (request, response) {
+
+})
+
 // Print
 function printFile(path) {
     const text = fs.readFileSync(path, "utf-8");
+    const splitByLine = text.split('\r\n');
 
-    console.log(text);
+    for (let i = 0; i < splitByLine.length; i++) {
+        if (splitByLine[i].charAt(0) != ';') {
+            console.log(splitByLine[i]);
+        }
+    }
+
 
     // Print File
     (async function () {
-        await myPrinter.sendGCode(text);
+        for (let i = 0; i < splitByLine.length; i++) {
+            if (splitByLine[i].charAt(0) != ';') {
+                await myPrinter.sendGCode(splitByLine[i]);
+                console.log(splitByLine[i]);
+            }
+        }
+
+        printStatus = true;
     })();
+}
+
+// Pause Print
+function pausePrint () {
+
+}
+
+// Stop Print
+function stopPrint () {
+
 }
 
 // Live Feed
