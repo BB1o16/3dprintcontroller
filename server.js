@@ -141,7 +141,9 @@ app.post('/start', function (request, response) {
             console.log(pauseCommands);
             isPaused = false;
         })();
-    }
+    } else {
+       response.send('The printer is not started, upload document first.');
+   }
 })
 
 // Print
