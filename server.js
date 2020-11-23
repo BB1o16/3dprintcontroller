@@ -114,10 +114,11 @@ function printFile(path) {
             if (splitByLine[i].charAt(0) != ';') {
                 let command = splitByLine[i].split(';').slice(0, 1);
 
-                await myPrinter.sendGCode(command);
-                console.log(command);
+                for (let j = 0; j < command.length; j++) {
+                    await myPrinter.sendGCode(command[j]);
+                    console.log(command[j]);
+                }
             }
-
         }
 
         printStatus = true;
