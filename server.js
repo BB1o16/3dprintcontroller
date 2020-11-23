@@ -29,7 +29,7 @@ const myPrinter = new _dPrinterController.Printer("/dev/ttyUSB0", 115200, {
 // Initialize 3d Printer
 (async function () {
     await myPrinter.init();
-    await myPrinter.autoHome(["X", "Y", "Z"]);
+    await myPrinter.sendGCode('G28 ; Auto Home')
 })();
 
 // Parse POST Data
@@ -104,22 +104,22 @@ function printFile(path) {
     // Print File
     (async function () {
         for (const x in textByLine) {
-            await myPrinter.sendGCode(textByLine[x]);
             console.log(textByLine[x])
         }
+        await myPrinter.sendGCode(textByLine);
     })();
 }
 
-// Live Feed
-io.on('connection', function (socket) {
-    console.log("Connected to  the socket successfully");
-
-    setInterval(() => {
-        const frame = wCap.read();
-        const image = cv.imencode('.jpg', frame).toString('base64');
-        socket.emit('image', image);
-    }, 100)
-})
+// // Live Feed
+// io.on('connection', function (socket) {
+//     console.log("Connected to  the socket successfully");
+//
+//     setInterval(() => {
+//         const frame = wCap.read();
+//         const image = cv.imencode('.jpg', frame).toString('base64');
+//         socket.emit('image', image);
+//     }, 100)
+// })
 
 server.listen(3000, function () {
     console.log(`Server listening on port ${3000}`);
