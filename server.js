@@ -99,17 +99,12 @@ app.post('/upload', function(request, response) {
 // Print
 function printFile(path) {
     const text = fs.readFileSync(path, "utf-8");
-    const textByLine = text.split(";");
+
+    console.log(text);
 
     // Print File
     (async function () {
-        for (const x in textByLine) {
-            if (!textByLine[x].startsWith(';')) {
-                console.log(textByLine[x]);
-            }
-        }
-
-        //await myPrinter.sendGCode(textByLine);
+        await myPrinter.sendGCode(text);
     })();
 }
 
