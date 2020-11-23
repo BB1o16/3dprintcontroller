@@ -20,7 +20,7 @@ app.use(session({
 "use strict";
 
 // Printer Settings
-const myPrinter = new _dPrinterController.Printer("/dev/ttyUSB0", 115200, {
+const myPrinter = new _dPrinterController.Printer("/dev/ttyUSB3", 115200, {
     x: 220,
     y: 220,
     z: 250

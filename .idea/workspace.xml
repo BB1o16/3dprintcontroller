@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbe93722-3639-49b1-8b80-45376e223afb" name="Default Changelist" comment="Update Final Views">
+    <list default="true" id="fbe93722-3639-49b1-8b80-45376e223afb" name="Default Changelist" comment="Update for Pi">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
@@ -163,7 +163,7 @@
       <workItem from="1606009302028" duration="4766000" />
       <workItem from="1606067626238" duration="1279000" />
       <workItem from="1606069209371" duration="827000" />
-      <workItem from="1606076540404" duration="6210000" />
+      <workItem from="1606076540404" duration="6877000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1603999107466</created>
@@ -291,7 +291,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606069994791</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Update for Pi">
+      <created>1606091075682</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1606091075682</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -324,7 +331,8 @@
     <MESSAGE value="code mistake fix" />
     <MESSAGE value="On Start Initialize Printer, and File Uploading and Print Start capabilities." />
     <MESSAGE value="Update Final Views" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update Final Views" />
+    <MESSAGE value="Update for Pi" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update for Pi" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1546" y="382" key="#Inspections" timestamp="1605138866249">
@@ -423,10 +431,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1421" y="345" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1604000033838" />
-    <state x="1512" y="437" key="Vcs.Push.Dialog.v2" timestamp="1606069997110">
+    <state x="1512" y="437" key="Vcs.Push.Dialog.v2" timestamp="1606091077565">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1512" y="437" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1606069997110" />
+    <state x="1512" y="437" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1606091077565" />
     <state x="1753" y="438" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1606014207074">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
