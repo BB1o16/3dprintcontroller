@@ -29,7 +29,7 @@ const myPrinter = new _dPrinterController.Printer("/dev/ttyUSB0", 115200, {
 // Initialize 3d Printer
 (async function () {
     await myPrinter.init();
-    await myPrinter.sendGCode('G28 ; Auto Home')
+    await myPrinter.sendGCode('G28 ;')
 })();
 
 // Parse POST Data
@@ -99,7 +99,7 @@ app.post('/upload', function(request, response) {
 // Print
 function printFile(path) {
     const text = fs.readFileSync(path, "utf-8");
-    const textByLine = text.split(";");
+    const textByLine = text.split("/n");
 
     // Print File
     (async function () {
