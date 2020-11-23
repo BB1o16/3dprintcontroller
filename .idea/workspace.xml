@@ -19,9 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbe93722-3639-49b1-8b80-45376e223afb" name="Default Changelist" comment="Update Code with Stop, Pause Functions, and HTML Status and File Name">
+    <list default="true" id="fbe93722-3639-49b1-8b80-45376e223afb" name="Default Changelist" comment="Fixed Test Case">
+      <change afterPath="$PROJECT_DIR$/public/storage/CE3_3DBenchy.gcode" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/app/views/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/app/views/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -164,28 +164,9 @@
       <workItem from="1606067626238" duration="1279000" />
       <workItem from="1606069209371" duration="827000" />
       <workItem from="1606076540404" duration="35442000" />
-      <workItem from="1606144467249" duration="7075000" />
-    </task>
-    <task id="LOCAL-00001" summary="First Commit">
-      <created>1603999107466</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1603999107466</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Initialize 3d printer">
-      <created>1604940572123</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1604940572123</updated>
-    </task>
-    <task id="LOCAL-00003" summary="node modules">
-      <created>1604940763973</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1604940763973</updated>
+      <workItem from="1606144467249" duration="9405000" />
+      <workItem from="1606165407320" duration="631000" />
+      <workItem from="1606173225534" duration="361000" />
     </task>
     <task id="LOCAL-00004" summary="remove type module">
       <created>1604942411756</created>
@@ -509,7 +490,28 @@
       <option name="project" value="LOCAL" />
       <updated>1606122641222</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="Update Code with Stop, Pause Functions">
+      <created>1606159927981</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1606159927982</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Update Code">
+      <created>1606160096088</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1606160096088</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Fixed Test Case">
+      <created>1606161281103</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1606161281103</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -544,10 +546,12 @@
     <MESSAGE value="Update Final Views" />
     <MESSAGE value="Update for Pi" />
     <MESSAGE value="Pi USB Location" />
-    <MESSAGE value="Update Code" />
     <MESSAGE value="Update Code Test" />
     <MESSAGE value="Update Code with Stop, Pause Functions, and HTML Status and File Name" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update Code with Stop, Pause Functions, and HTML Status and File Name" />
+    <MESSAGE value="Update Code with Stop, Pause Functions" />
+    <MESSAGE value="Update Code" />
+    <MESSAGE value="Fixed Test Case" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed Test Case" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1546" y="382" key="#Inspections" timestamp="1605138866249">
@@ -574,26 +578,26 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1781" y="602" key="Github.ShareDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1603999140950" />
-    <state width="1258" height="383" key="GridCell.Tab.0.bottom" timestamp="1606159655441">
+    <state width="1258" height="637" key="GridCell.Tab.0.bottom" timestamp="1606163597464">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1686" height="228" key="GridCell.Tab.0.bottom/0.0.1707.920@0.0.1707.920" timestamp="1605336051703" />
-    <state width="1258" height="383" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1606159655441" />
-    <state width="1258" height="383" key="GridCell.Tab.0.center" timestamp="1606159655441">
+    <state width="1258" height="637" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1606163597464" />
+    <state width="1258" height="637" key="GridCell.Tab.0.center" timestamp="1606163597464">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1686" height="228" key="GridCell.Tab.0.center/0.0.1707.920@0.0.1707.920" timestamp="1605336051703" />
-    <state width="1258" height="383" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1606159655441" />
-    <state width="1258" height="383" key="GridCell.Tab.0.left" timestamp="1606159655441">
+    <state width="1258" height="637" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1606163597464" />
+    <state width="1258" height="637" key="GridCell.Tab.0.left" timestamp="1606163597464">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1686" height="228" key="GridCell.Tab.0.left/0.0.1707.920@0.0.1707.920" timestamp="1605336051703" />
-    <state width="1258" height="383" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1606159655441" />
-    <state width="1258" height="383" key="GridCell.Tab.0.right" timestamp="1606159655441">
+    <state width="1258" height="637" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1606163597464" />
+    <state width="1258" height="637" key="GridCell.Tab.0.right" timestamp="1606163597464">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1686" height="228" key="GridCell.Tab.0.right/0.0.1707.920@0.0.1707.920" timestamp="1605336051703" />
-    <state width="1258" height="383" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1606159655441" />
+    <state width="1258" height="637" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1606163597464" />
     <state width="1257" height="491" key="GridCell.Tab.1.bottom" timestamp="1605989100087">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -646,10 +650,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1421" y="345" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1604000033838" />
-    <state x="1512" y="437" key="Vcs.Push.Dialog.v2" timestamp="1606122642298">
+    <state x="1512" y="437" key="Vcs.Push.Dialog.v2" timestamp="1606161302226">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1512" y="437" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1606122642298" />
+    <state x="1512" y="437" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1606161302226" />
     <state x="1753" y="438" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1606014207074">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

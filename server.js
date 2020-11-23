@@ -104,7 +104,7 @@ app.post('/stop', function (request, response) {
         (async function () {
              const stopCommands = ['M140 S0', 'M107', 'G91', 'G1 E-2 F2700', 'G1 E-2 Z0.2 F2400',
                 'G1 X5 Y5 F3000', 'M106 S0', 'M104 S0', 'M140 S0', 'M84 X Y E'];
-            //await myPrinter.sendGCode(stopCommands);
+            await myPrinter.sendGCode(stopCommands);
             console.log("Printer is Stopping...");
             console.log(stopCommands);
             printStatus = false;
@@ -156,13 +156,12 @@ function printFile(path) {
     // Print File
     (async function () {
         let command;
-        //let commands;
 
         for (let i = 0; i < splitByLine.length; i++) {
             if (splitByLine[i].charAt(0) != ';') {
-                command = splitByLine[i].split(';').slice(0, 1);
-
+                command = splitByLine[i].split(';').slice(0, 1).join(splitByLine[i]);
                 await myPrinter.sendGCode(command);
+                console.log(command);
             }
         }
     })();
