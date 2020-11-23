@@ -78,22 +78,21 @@ app.post('/upload', function(request, response) {
     if (!request.files || Object.keys(request.files).length === 0) {
         response.status(400).send('No files were uploaded.');
         return;
+    } else {
+        console.log('request.files >>>', request.files); // eslint-disable-line
+
+        sampleFile = request.files.sampleFile;
+
+        uploadPath = __dirname + '/public/storage/' + sampleFile.name;
+
+        sampleFile.mv(uploadPath, function(err) {
+            if (err) {
+                return response.status(500).send(err);
+            }
+
+            printFile(uploadPath);
+        });
     }
-
-    console.log('request.files >>>', request.files); // eslint-disable-line
-
-    sampleFile = request.files.sampleFile;
-
-    uploadPath = __dirname + '/public/storage/' + sampleFile.name;
-
-    sampleFile.mv(uploadPath, function(err) {
-        if (err) {
-            return response.status(500).send(err);
-        }
-
-        printFile(uploadPath);
-
-    });
 });
 
 // Print
