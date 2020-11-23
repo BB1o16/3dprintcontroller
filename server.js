@@ -108,13 +108,6 @@ function printFile(path) {
     const text = fs.readFileSync(path, "utf-8");
     const splitByLine = text.split('\r\n');
 
-    for (let i = 0; i < splitByLine.length; i++) {
-        if (splitByLine[i].charAt(0) != ';') {
-            console.log(splitByLine[i]);
-        }
-    }
-
-
     // Print File
     (async function () {
         for (let i = 0; i < splitByLine.length; i++) {
