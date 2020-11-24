@@ -19,8 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbe93722-3639-49b1-8b80-45376e223afb" name="Default Changelist" comment="Fixed Test Case">
-      <change afterPath="$PROJECT_DIR$/public/storage/CE3_3DBenchy.gcode" afterDir="false" />
+    <list default="true" id="fbe93722-3639-49b1-8b80-45376e223afb" name="Default Changelist" comment="Print Function Work">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
@@ -166,14 +165,7 @@
       <workItem from="1606076540404" duration="35442000" />
       <workItem from="1606144467249" duration="9405000" />
       <workItem from="1606165407320" duration="631000" />
-      <workItem from="1606173225534" duration="361000" />
-    </task>
-    <task id="LOCAL-00004" summary="remove type module">
-      <created>1604942411756</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1604942411756</updated>
+      <workItem from="1606173225534" duration="5585000" />
     </task>
     <task id="LOCAL-00005" summary="rename init extention to .mjs">
       <created>1604943720263</created>
@@ -511,7 +503,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606161281103</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Print Function Work">
+      <created>1606173680578</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1606173680578</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -551,7 +550,8 @@
     <MESSAGE value="Update Code with Stop, Pause Functions" />
     <MESSAGE value="Update Code" />
     <MESSAGE value="Fixed Test Case" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed Test Case" />
+    <MESSAGE value="Print Function Work" />
+    <option name="LAST_COMMIT_MESSAGE" value="Print Function Work" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1546" y="382" key="#Inspections" timestamp="1605138866249">
@@ -578,26 +578,26 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1781" y="602" key="Github.ShareDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1603999140950" />
-    <state width="1258" height="637" key="GridCell.Tab.0.bottom" timestamp="1606163597464">
+    <state width="1258" height="462" key="GridCell.Tab.0.bottom" timestamp="1606179167241">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1686" height="228" key="GridCell.Tab.0.bottom/0.0.1707.920@0.0.1707.920" timestamp="1605336051703" />
-    <state width="1258" height="637" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1606163597464" />
-    <state width="1258" height="637" key="GridCell.Tab.0.center" timestamp="1606163597464">
+    <state width="1258" height="462" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1606179167241" />
+    <state width="1258" height="462" key="GridCell.Tab.0.center" timestamp="1606179167241">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1686" height="228" key="GridCell.Tab.0.center/0.0.1707.920@0.0.1707.920" timestamp="1605336051703" />
-    <state width="1258" height="637" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1606163597464" />
-    <state width="1258" height="637" key="GridCell.Tab.0.left" timestamp="1606163597464">
+    <state width="1258" height="462" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1606179167241" />
+    <state width="1258" height="462" key="GridCell.Tab.0.left" timestamp="1606179167241">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1686" height="228" key="GridCell.Tab.0.left/0.0.1707.920@0.0.1707.920" timestamp="1605336051703" />
-    <state width="1258" height="637" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1606163597464" />
-    <state width="1258" height="637" key="GridCell.Tab.0.right" timestamp="1606163597464">
+    <state width="1258" height="462" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1606179167241" />
+    <state width="1258" height="462" key="GridCell.Tab.0.right" timestamp="1606179167241">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1686" height="228" key="GridCell.Tab.0.right/0.0.1707.920@0.0.1707.920" timestamp="1605336051703" />
-    <state width="1258" height="637" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1606163597464" />
+    <state width="1258" height="462" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1606179167241" />
     <state width="1257" height="491" key="GridCell.Tab.1.bottom" timestamp="1605989100087">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -650,10 +650,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1421" y="345" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1604000033838" />
-    <state x="1512" y="437" key="Vcs.Push.Dialog.v2" timestamp="1606161302226">
+    <state x="1512" y="437" key="Vcs.Push.Dialog.v2" timestamp="1606173905433">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1512" y="437" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1606161302226" />
+    <state x="1512" y="437" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1606173905433" />
     <state x="1753" y="438" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1606014207074">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

@@ -148,23 +148,27 @@ app.post('/start', function (request, response) {
 
 // Print
 function printFile(path) {
-    const text = fs.readFileSync(path, "utf-8");
-    const splitByLine = text.split('\r\n');
+    fs.readFile(path, function (err, data) {
+        if (err) throw err;
+        const text = data.toString().split("\r\n");
 
-    printStatus = true;
-
-    // Print File
-    (async function () {
-        let command;
-
-        for (let i = 0; i < splitByLine.length; i++) {
-            if (splitByLine[i].charAt(0) != ';') {
-                command = splitByLine[i].split(';').slice(0, 1).join(splitByLine[i]);
-                await myPrinter.sendGCode(command);
-                console.log(command);
+        for (let i = 0; i < text.length; i++) {
+            if (text[i].charAt(0) == ';') {
+                text[i] = text[i].slice(1, 0);
+            } else {
+                text[i] = text[i].split('/;(?=\\w+:)/').pop();
             }
+
         }
-    })();
+
+        (async function () {
+            await myPrinter.sendGCode(text);
+
+        })();
+
+        console.log(text);
+    })
+
 }
 
 // Live Feed
