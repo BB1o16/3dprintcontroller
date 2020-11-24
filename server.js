@@ -10,6 +10,7 @@ const wCap = new cv.VideoCapture(0);
 const fileUpload = require('express-fileupload');
 const fs = require('fs');
 const _dPrinterController = require("3d-printer-controller");
+const util = require('util');
 
 app.use(session({
     secret: 'secret',
@@ -160,11 +161,11 @@ function printFile(path) {
         }
 
         (async function () {
-            await myPrinter.sendGCode(text);
+            await myPrinter.sendGCode(util.inspect(text, {maxArrayLength: null}));
 
         })();
 
-        console.log(text);
+        console.log(util.inspect(text, {maxArrayLength: null}));
     })
 
 }
