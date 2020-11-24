@@ -155,10 +155,8 @@ function printFile(path) {
         for (let i = 0; i < text.length; i++) {
             if (text[i].charAt(0) == ';') {
                 text[i] = text[i].slice(1, 0);
-            } else {
-                text[i] = text[i].split('/;(?=\\w+:)/').pop();
             }
-
+            text[i] = text[i].split(';').slice(0,1).pop();
         }
 
         (async function () {
