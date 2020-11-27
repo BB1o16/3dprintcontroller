@@ -24,7 +24,7 @@ let isPaused = false;
 "use strict";
 
 // Printer Settings /dev/ttyUSB0
-const myPrinter = new _dPrinterController.Printer("COM3", 115200, {
+const myPrinter = new _dPrinterController.Printer("/dev/ttyUSB0", 115200, {
     x: 220,
     y: 220,
     z: 250
