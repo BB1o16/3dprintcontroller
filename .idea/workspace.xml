@@ -19,8 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbe93722-3639-49b1-8b80-45376e223afb" name="Default Changelist" comment="Print Function Work">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="fbe93722-3639-49b1-8b80-45376e223afb" name="Default Changelist" comment="Fix Printer Port">
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -167,21 +166,7 @@
       <workItem from="1606165407320" duration="631000" />
       <workItem from="1606173225534" duration="5848000" />
       <workItem from="1606193833205" duration="4283000" />
-      <workItem from="1606433256655" duration="2472000" />
-    </task>
-    <task id="LOCAL-00008" summary="live camera feed">
-      <created>1605136082971</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1605136082971</updated>
-    </task>
-    <task id="LOCAL-00009" summary="live camera feed">
-      <created>1605146442617</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1605146442617</updated>
+      <workItem from="1606433256655" duration="3014000" />
     </task>
     <task id="LOCAL-00010" summary="live camera feed">
       <created>1605146548545</created>
@@ -512,7 +497,21 @@
       <option name="project" value="LOCAL" />
       <updated>1606197685070</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="Print Function Remove Spaces">
+      <created>1606435764490</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1606435764491</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Fix Printer Port">
+      <created>1606435877914</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1606435877914</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -553,7 +552,9 @@
     <MESSAGE value="Update Code" />
     <MESSAGE value="Fixed Test Case" />
     <MESSAGE value="Print Function Work" />
-    <option name="LAST_COMMIT_MESSAGE" value="Print Function Work" />
+    <MESSAGE value="Print Function Remove Spaces" />
+    <MESSAGE value="Fix Printer Port" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix Printer Port" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1546" y="382" key="#Inspections" timestamp="1605138866249">
@@ -580,26 +581,26 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1781" y="602" key="Github.ShareDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1603999140950" />
-    <state width="1257" height="464" key="GridCell.Tab.0.bottom" timestamp="1606435676868">
+    <state width="1258" height="464" key="GridCell.Tab.0.bottom" timestamp="1606436273673">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1686" height="228" key="GridCell.Tab.0.bottom/0.0.1707.920@0.0.1707.920" timestamp="1605336051703" />
-    <state width="1257" height="464" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1606435676868" />
-    <state width="1257" height="464" key="GridCell.Tab.0.center" timestamp="1606435676868">
+    <state width="1258" height="464" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1606436273673" />
+    <state width="1258" height="464" key="GridCell.Tab.0.center" timestamp="1606436273673">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1686" height="228" key="GridCell.Tab.0.center/0.0.1707.920@0.0.1707.920" timestamp="1605336051703" />
-    <state width="1257" height="464" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1606435676868" />
-    <state width="1257" height="464" key="GridCell.Tab.0.left" timestamp="1606435676868">
+    <state width="1258" height="464" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1606436273673" />
+    <state width="1258" height="464" key="GridCell.Tab.0.left" timestamp="1606436273673">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1686" height="228" key="GridCell.Tab.0.left/0.0.1707.920@0.0.1707.920" timestamp="1605336051703" />
-    <state width="1257" height="464" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1606435676868" />
-    <state width="1257" height="464" key="GridCell.Tab.0.right" timestamp="1606435676868">
+    <state width="1258" height="464" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1606436273673" />
+    <state width="1258" height="464" key="GridCell.Tab.0.right" timestamp="1606436273673">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1686" height="228" key="GridCell.Tab.0.right/0.0.1707.920@0.0.1707.920" timestamp="1605336051703" />
-    <state width="1257" height="464" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1606435676868" />
+    <state width="1258" height="464" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1606436273673" />
     <state width="1257" height="491" key="GridCell.Tab.1.bottom" timestamp="1605989100087">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -652,10 +653,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1421" y="345" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1604000033838" />
-    <state x="1512" y="437" key="Vcs.Push.Dialog.v2" timestamp="1606197686682">
+    <state x="1512" y="437" key="Vcs.Push.Dialog.v2" timestamp="1606435879278">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1512" y="437" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1606197686682" />
+    <state x="1512" y="437" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1606435879278" />
     <state x="1753" y="438" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1606014207074">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
