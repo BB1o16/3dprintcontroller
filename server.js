@@ -23,8 +23,8 @@ let isPaused = false;
 
 "use strict";
 
-// Printer Settings
-const myPrinter = new _dPrinterController.Printer("/dev/ttyUSB0", 115200, {
+// Printer Settings /dev/ttyUSB0
+const myPrinter = new _dPrinterController.Printer("COM3", 115200, {
     x: 220,
     y: 220,
     z: 250
@@ -149,23 +149,28 @@ app.post('/start', function (request, response) {
 
 // Print
 function printFile(path) {
+    let array = ['M140 S50', 'M105', 'M190 S50', 'M104 S200', 'M105', 'M109 S200', 'M82', 'G92 E0', 'G28',
+        'G1 Z2.0 F3000', 'G1 X0.1 Y20 Z0.3 F5000.0', 'G1 X0.1 Y200.0 Z0.3 F1500.0 E15', 'G1 X0.4 Y200.0 Z0.3 F5000.0',
+        'G1 X0.4 Y20 Z0.3 F1500.0 E30', 'G92 E0', 'G1 Z2.0 F3000', 'G1 X5 Y20 Z0.3 F5000.0', 'G92 E0', 'G92 E0', 'G1 F2700 E-5'];
+
     fs.readFile(path, function (err, data) {
         if (err) throw err;
-        const text = data.toString().split("\r\n");
+        let text = data.toString().split("\r\n");
 
-        for (let i = 0; i < text.length; i++) {
-            if (text[i].charAt(0) == ';') {
-                text[i] = text[i].slice(1, 0);
-            }
-            text[i] = text[i].split(';').slice(0,1).pop();
-        }
 
         (async function () {
-            await myPrinter.sendGCode(util.inspect(text, {maxArrayLength: null}));
+            for (let i = 0; i < text.length; i++) {
+                if (text[i].charAt(0) == ';') {
+                    text[i] = text[i].slice(1, 0);
+                }
+                text[i] = text[i].split(';').slice(0,1).pop();
+            }
+
+            text = text.filter((v) => v != '')
+            await myPrinter.sendGCode(text);
+            console.log(text);
 
         })();
-
-        console.log(util.inspect(text, {maxArrayLength: null}));
     })
 
 }
