@@ -35,6 +35,23 @@
 </head>
 <body>
 
+<form ref='uploadForm'
+      id='uploadForm'
+      action='print'
+      method='post'
+      encType="multipart/form-data">
+    <input type="file" name="file" id="file"/>
+    <input type='submit' value='Upload!' />
+</form>
+
+<form ref='warmPrinterForm'
+      id='warmPrinterForm'
+      action='warm'
+      method='post'
+      encType="multipart/form-data">
+    <input type='submit' value='Warm Printer!' />
+</form>
+
 <div class="row">
     <div class="column left" >
 
@@ -63,35 +80,24 @@
 
         </br>
 
-        <form ref='uploadForm'
-              id='uploadForm'
-              action='upload'
-              method='post'
-              encType="multipart/form-data">
-            <input type="file" name="sampleFile" id="fileInput"/>
-            <input type='submit' value='Upload!' />
+        <script type="text/javascript">
+            const fileInput = document.getElementById('file');
+            // Output Text HTML
+            fileInput.addEventListener("change", function() {
+                if (this.files && this.files[0]) {
+                    const myFile = this.files[0];
+                    const reader = new FileReader();
 
+                    reader.addEventListener('load', function(e) {
+                        document.getElementById("output").innerText = e.target.result;
+                        document.getElementById("fileName").innerHTML += fileInput.value.split(/(\\|\/)/g).pop();
+                        document.getElementById("status").innerHTML += ' Connected! '
+                    });
 
-            <script type="text/javascript">
-                const fileInput = document.getElementById('fileInput');
-                // Output Text HTML
-                fileInput.addEventListener("change", function() {
-                    if (this.files && this.files[0]) {
-                        const myFile = this.files[0];
-                        const reader = new FileReader();
-
-                        reader.addEventListener('load', function(e) {
-                            document.getElementById("output").innerText = e.target.result;
-                            document.getElementById("fileName").innerHTML += fileInput.value.split(/(\\|\/)/g).pop();
-                            document.getElementById("status").innerHTML += ' Connected! '
-                        });
-
-                        reader.readAsText(myFile);
-                    }
-                });
-            </script>
-
-        </form>
+                    reader.readAsText(myFile);
+                }
+            });
+        </script>
 
         <form ref="stopForm"
               id="stopForm"
