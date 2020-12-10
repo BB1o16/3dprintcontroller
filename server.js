@@ -151,7 +151,7 @@ app.post('/start', function (request, response) {
 app.post('/warm', function (request, response) {
     if (printStatus == false) {
         (async function () {
-            const warmCommands = ['M140 S65', 'M105', 'M190 S65', 'M104 S210', 'M105', 'M109 S210'];
+            const warmCommands = ['M140 S25', 'M105', 'M190 S25', 'M104 S50', 'M105', 'M109 S50'];
             await myPrinter.sendGCode(warmCommands);
             console.log("Printer is Warming...");
             console.log(warmCommands);
